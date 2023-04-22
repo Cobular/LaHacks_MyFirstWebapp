@@ -9,8 +9,8 @@ app = Flask(__name__)
 
 
 # This is the API key you got from the website
-API_KEY="8c619c35-4ee6-4f44-a5dd-50954b81503e"
-PROMPT="funny names for an indoor pet cow, in spanish"
+API_KEY="..."
+PROMPT="..."
 
 
 @app.route('/')
@@ -26,4 +26,4 @@ def hello():
 
     print(resp["completion"])
 
-    return render_template('index.html', response=resp["completion"])
+    return render_template('index.jinja', response=resp["completion"])
